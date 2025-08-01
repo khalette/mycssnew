@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Dynamic Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to the Dynamic Page!</h1>
+
+  <section id="greeting-section">
+    <button id="greet-btn">Show Greeting</button>
+    <p id="greeting-msg" class="hidden"></p>
+  </section>
+
+  <section id="toggle-section">
+    <button id="toggle-btn">Toggle Secret Content</button>
+    <div id="secret-content" class="hidden">
+      <p>🎉 This is the secret content! 🎉</p>
+    </div>
+  </section>
+
+  <section id="form-section">
+    <h2>Sign Up</h2>
+    <form id="signup-form" novalidate>
+      <label>
+        Username:
+        <input type="text" id="username" name="username" required>
+      </label>
+      <div id="username-error" class="error"></div>
+      <br>
+      <label>
+        Email:
+        <input type="email" id="email" name="email" required>
+      </label>
+      <div id="email-error" class="error"></div>
+      <br>
+      <label>
+        Password:
+        <input type="password" id="password" name="password" required>
+      </label>
+      <div id="password-error" class="error"></div>
+      <br>
+      <button type="submit">Register</button>
+    </form>
+    <div id="form-success" class="success"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
